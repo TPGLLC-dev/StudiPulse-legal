@@ -29,7 +29,7 @@
   <h1>StudiPulse &mdash; Privacy Policy</h1>
   <p class="meta">
     <strong>Effective Date:</strong> August 12, 2026 &nbsp;&bull;&nbsp;
-    <strong>Last Updated:</strong> October 7, 2026
+    <strong>Last Updated:</strong> November 23, 2026
   </p>
 
   <p>
@@ -48,6 +48,7 @@
     <tr><td>Push notification token</td><td>Device token assigned by Apple's push notification service</td><td>Deliver wait-time alerts, ride-status changes, and weather advisories you've opted into</td></tr>
     <tr><td>Photos &amp; media</td><td>Not collected. A profile picture you choose stays on your device and is never uploaded to our servers</td><td>Display your chosen profile picture on your own device</td></tr>
     <tr><td>Device identifier</td><td>Identifier for Vendor (IDFV), used by our subscription billing provider (RevenueCat)</td><td>Associate your purchase/subscription state with your account across app launches</td></tr>
+    <tr><td>Ask StudiPulse questions</td><td>The text of a question you ask (spoken questions are converted to text on your device), the park you ask about, today's date and the ride names in your My Day plan. If you allow location, your last known position is sent to our server with the question</td><td>Write the answer (sent to Anthropic, see Section 4) and work out walking times (location stays on our server and is never sent to the AI). We do not keep the questions or answers; we keep only a daily question count per account, to apply the daily limit</td></tr>
     <tr><td>App usage data</td><td>Itinerary items, ride alerts you set, favorites</td><td>Provide the core features of the App (planning, alerts, My Day)</td></tr>
   </table>
 
@@ -71,7 +72,9 @@
     Location data is processed primarily on your device. Background location (used to auto-detect when you've
     finished a ride, so your itinerary updates itself, and to send a "leaving the resort" notification) requires
     your explicit permission and can be revoked at any time in your device's Settings. We do not sell location
-    data to third parties or use it for advertising.
+    data to third parties or use it for advertising. When you send a question to Ask StudiPulse, the App includes your
+    last known position (if you have allowed location) so our server can work out walking times; it is not
+    stored and is never sent to the AI.
   </p>
 
   <h2>4. Third-Party Services</h2>
@@ -80,6 +83,7 @@
     <li><strong>Google Firebase</strong> (Authentication, Realtime Database, Cloud Functions) — <a href="https://firebase.google.com/support/privacy">Firebase Privacy &amp; Security</a></li>
     <li><strong>RevenueCat</strong> (subscription management) — <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></li>
     <li><strong>Expo</strong> (push notification delivery) — <a href="https://expo.dev/privacy">Expo Privacy Policy</a></li>
+    <li><strong>Anthropic</strong> (writes Ask StudiPulse answers) — receives only your question, the park, today's date and the ride names in your plan, never your name, email, account ID or location. The App asks your permission before your first question is sent. Under Anthropic's commercial terms it does not use this data to train its models, and it may keep it for up to 30 days for safety and abuse monitoring — <a href="https://www.anthropic.com/legal/privacy">Anthropic Privacy Policy</a></li>
     <li><strong>ThemeParks.wiki API</strong> (third-party wait-time data provider) — no personal data is shared with this service; it is used only to fetch public wait-time information</li>
     <li><strong>Apple App Store / Sign in with Apple, Google Sign-In</strong> — governed by Apple's and Google's own privacy policies</li>
   </ul>
@@ -89,7 +93,8 @@
     We retain your account data for as long as your account is active. You may delete your account at any time
     from the Profile section of the App, which removes your account data from our systems. Some anonymized,
     aggregated data (e.g., wait-time history used to improve predictions) is not tied to your account and is
-    retained separately.
+    retained separately. Ask StudiPulse answers are saved only on your device, until 3 AM park time, and are removed
+    when you sign out or delete your account.
   </p>
 
   <h2>6. Your Rights</h2>
